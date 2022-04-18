@@ -1,0 +1,16 @@
+#gameSettings {
+    height: 350px;
+    width: 300px;
+    border: solid
+}
+
+#memorySpace {
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    left: 200px;
+}
+
+.isHidden{
+    display: none;
+}

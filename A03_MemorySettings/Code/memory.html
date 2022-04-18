@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="memory.css">
+    <script src="memory.js"></script>
+</head>
+
+<body>
+    <h1>Memory</h1>
+    
+    <div id="gameSettings">
+        <h3>Card size:</h3>
+        <input type="range" id="size" name="size" min="30" max="200" step="30">
+        <br>
+        <h3>Color picker:</h3>
+        <br>
+        <h3>Font:</h3>
+        <select>
+            <option value= "Arial, Helvetica, sans-serif" type= "radio" id= "arial" name="font">Arial</option>
+            <option value= "'Times New Roman', Times, serif" type= "radio" id= "timesNew" name="font">Times New Roman</option>
+            <option value= "sans-serif" type= "radio" id= "comicSans" name="font">Comic Sans</option>
+        </select>
+        <br>
+        <h3>Number of Cards:</h3>
+        <input type="number" max="10" min="2" value="6">
+        <br>
+    </div>
+</body>
+
+</html>
