@@ -1,4 +1,4 @@
-namespace StrandClasses {
+namespace StrandInter {
 export class Seagull extends Moveable {
    
     position: number;
@@ -20,12 +20,6 @@ export class Seagull extends Moveable {
         crc2.strokeStyle = "#000000";
         crc2.stroke(); 
     }  
-    
-    animate (_timeslice: number): void {
-        let offset: Vector = new Vector(this.velocity.x, this.velocity.y);
-        offset.scale(_timeslice);
-        this.position.add(offset);
-    }
         
 }
 }

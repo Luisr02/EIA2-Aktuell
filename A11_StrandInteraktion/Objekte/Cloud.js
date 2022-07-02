@@ -13,8 +13,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var StrandClasses;
-(function (StrandClasses) {
+var StrandInter;
+(function (StrandInter) {
     var Cloud = /** @class */ (function (_super) {
         __extends(Cloud, _super);
         function Cloud() {
@@ -38,13 +38,8 @@ var StrandClasses;
             crc2.fillStyle = "#FFFFFF";
             crc2.fill();
         };
-        Cloud.prototype.animate = function (_timeslice) {
-            var offset = new StrandClasses.Vector(this.velocity.x, this.velocity.y);
-            offset.scale(_timeslice);
-            this.position.add(offset);
-        };
         return Cloud;
-    }(StrandClasses.Moveable));
-    StrandClasses.Cloud = Cloud;
-})(StrandClasses || (StrandClasses = {}));
+    }(StrandInter.Moveable));
+    StrandInter.Cloud = Cloud;
+})(StrandInter || (StrandInter = {}));
 //# sourceMappingURL=Cloud.js.map

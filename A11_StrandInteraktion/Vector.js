@@ -1,5 +1,5 @@
-var StrandClasses;
-(function (StrandClasses) {
+var StrandInter;
+(function (StrandInter) {
     var Vector = /** @class */ (function () {
         function Vector(_x, _y) {
             this.set(_x, _y);
@@ -27,6 +27,6 @@ var StrandClasses;
         };
         return Vector;
     }());
-    StrandClasses.Vector = Vector;
-})(StrandClasses || (StrandClasses = {}));
+    StrandInter.Vector = Vector;
+})(StrandInter || (StrandInter = {}));
 //# sourceMappingURL=Vector.js.map

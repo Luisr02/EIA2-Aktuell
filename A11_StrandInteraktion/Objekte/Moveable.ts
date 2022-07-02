@@ -1,4 +1,4 @@
-namespace StrandClasses {
+namespace StrandInter {
 export abstract class Moveable {
     posX: number;
     posY: number;
@@ -18,8 +18,5 @@ export abstract class Moveable {
         console.log("draw");
     }
 
-    animate(_timeslice: number): void {
-        console.log("update");
-    }
 }
 }

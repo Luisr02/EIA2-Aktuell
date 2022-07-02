@@ -93,10 +93,10 @@ var StrandClasses;
         drawSwimmer(300, 300);
         drawPalm(50, 550);
         drawPalm(300, 500);
-        var cloud1 = new Cloud();
-        var cloud2 = new Cloud();
-        var seagull1 = new Seagull();
-        var seagull2 = new Seagull();
+        var cloud1 = new StrandClasses.Cloud();
+        var cloud2 = new StrandClasses.Cloud();
+        var seagull1 = new StrandClasses.Seagull();
+        var seagull2 = new StrandClasses.Seagull();
     }
 })(StrandClasses || (StrandClasses = {}));
 //# sourceMappingURL=strandclasses.js.map

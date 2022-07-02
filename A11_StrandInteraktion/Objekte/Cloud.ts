@@ -1,4 +1,4 @@
-namespace StrandClasses {
+namespace StrandInter {
 export class Cloud extends Moveable {
    
     position: number;
@@ -27,11 +27,6 @@ export class Cloud extends Moveable {
         crc2.fill();
     }  
     
-    animate (_timeslice: number): void {
-        let offset: Vector = new Vector(this.velocity.x, this.velocity.y);
-        offset.scale(_timeslice);
-        this.position.add(offset);   
-    }
         
 }
 }

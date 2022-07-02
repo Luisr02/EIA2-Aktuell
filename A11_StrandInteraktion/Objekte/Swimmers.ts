@@ -1,4 +1,4 @@
-namespace StrandClasses {
+namespace StrandInter {
 export class Swimmers extends Moveable {
    
     position: number;
@@ -42,13 +42,8 @@ export class Swimmers extends Moveable {
         crc2.fillStyle = "#000000";
         crc2.fill();   
         }
-    
-    
-    animate (_timeslice: number): void {
-        let offset: Vector = new Vector(this.velocity.x, this.velocity.y);
-        offset.scale(_timeslice);
-        this.position.add(offset);   
+     
     }
 
 }
-}
+

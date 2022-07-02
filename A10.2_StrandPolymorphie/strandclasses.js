@@ -66,12 +66,12 @@ var StrandClasses;
         drawSun(0, 0);
         drawPalm(50, 550);
         drawPalm(300, 500);
-        var cloud1 = new Cloud();
-        var cloud2 = new Cloud();
-        var seagull1 = new Seagull();
-        var seagull2 = new Seagull();
-        var swimmer1 = new Swimmer();
-        var swimmer1 = new Swimmer();
+        var cloud1 = new StrandClasses.Cloud();
+        var cloud2 = new StrandClasses.Cloud();
+        var seagull1 = new StrandClasses.Seagull();
+        var seagull2 = new StrandClasses.Seagull();
+        var swimmer1 = new StrandClasses.Swimmers();
+        var swimmer1 = new StrandClasses.Swimmers();
     }
 })(StrandClasses || (StrandClasses = {}));
 //# sourceMappingURL=strandclasses.js.map

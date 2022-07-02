@@ -1,4 +1,4 @@
-namespace StrandClasses {
+namespace StrandInter {
 export class Vector {
         
     x: number;

@@ -13,38 +13,46 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var StrandClasses;
-(function (StrandClasses) {
-    var Cloud = /** @class */ (function (_super) {
-        __extends(Cloud, _super);
-        function Cloud() {
+var StrandInter;
+(function (StrandInter) {
+    var Swimmers = /** @class */ (function (_super) {
+        __extends(Swimmers, _super);
+        function Swimmers() {
             var _this = _super.call(this, _this.position, _this.velocity) || this;
             return _this;
         }
-        Cloud.prototype.draw = function () {
+        Swimmers.prototype.draw = function () {
             var x = Math.random() * 400;
             var y = Math.random() * 100;
             var cvs = document.querySelector("canvas");
             var crc2 = cvs.getContext("2d");
+            /*Swimming Ring */
+            crc2.beginPath();
+            crc2.arc(x, y, 20, 0, 2 * Math.PI, false);
+            crc2.fillStyle = "#FF0000";
+            crc2.fill();
+            crc2.beginPath();
+            crc2.arc(x, y, 10, 0, 2 * Math.PI, false);
+            crc2.fillStyle = "#269BAE";
+            crc2.fill();
+            /*Body*/
             crc2.beginPath();
             crc2.moveTo(x, y);
-            crc2.bezierCurveTo(x - 20, y + 5, x - 10, y + 90, x + 30, y + 35);
-            crc2.bezierCurveTo(x + 50, y + 50, x + 75, y + 50, x + 75, y + 35);
-            crc2.bezierCurveTo(x + 140, y + 35, x + 115, y + 20, x + 105, y + 10);
-            crc2.bezierCurveTo(x + 180, y - 20, x + 105, y - 25, x + 80, y - 15);
-            crc2.bezierCurveTo(x + 75, y - 40, x + 40, y - 30, x + 35, y - 15);
-            crc2.bezierCurveTo(x + 15, y - 40, x - 5, y - 30, x, y);
-            crc2.closePath();
-            crc2.fillStyle = "#FFFFFF";
+            crc2.lineTo(x, y - 40);
+            crc2.moveTo(x, y - 25);
+            crc2.lineTo(x + 10, y - 25);
+            crc2.moveTo(x, y - 25);
+            crc2.lineTo(x - 10, y - 25);
+            crc2.strokeStyle = "#000000";
+            crc2.stroke();
+            /*Head*/
+            crc2.beginPath();
+            crc2.arc(x, y - 45, 10, 0, 2 * Math.PI, false);
+            crc2.fillStyle = "#000000";
             crc2.fill();
         };
-        Cloud.prototype.animate = function (_timeslice) {
-            var offset = new StrandClasses.Vector(this.velocity.x, this.velocity.y);
-            offset.scale(_timeslice);
-            this.position.add(offset);
-        };
-        return Cloud;
-    }(StrandClasses.Moveable));
-    StrandClasses.Cloud = Cloud;
-})(StrandClasses || (StrandClasses = {}));
-//# sourceMappingURL=Cloud.js.map
+        return Swimmers;
+    }(StrandInter.Moveable));
+    StrandInter.Swimmers = Swimmers;
+})(StrandInter || (StrandInter = {}));
+//# sourceMappingURL=Swimmers.js.map

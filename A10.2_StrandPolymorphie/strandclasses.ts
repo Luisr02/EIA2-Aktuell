@@ -86,8 +86,8 @@ namespace StrandClasses {
         let seagull1: Seagull = new Seagull();
         let seagull2: Seagull = new Seagull();
 
-        let swimmer1: Swimmers = new Swimmer();
-        let swimmer1: Swimmers = new Swimmer();
+        let swimmer1: Swimmers = new Swimmers();
+        let swimmer1: Swimmers = new Swimmers();
     }
 }
 

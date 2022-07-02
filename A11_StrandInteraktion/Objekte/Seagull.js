@@ -13,8 +13,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var StrandClasses;
-(function (StrandClasses) {
+var StrandInter;
+(function (StrandInter) {
     var Seagull = /** @class */ (function (_super) {
         __extends(Seagull, _super);
         function Seagull() {
@@ -32,13 +32,8 @@ var StrandClasses;
             crc2.strokeStyle = "#000000";
             crc2.stroke();
         };
-        Seagull.prototype.animate = function (_timeslice) {
-            var offset = new StrandClasses.Vector(this.velocity.x, this.velocity.y);
-            offset.scale(_timeslice);
-            this.position.add(offset);
-        };
         return Seagull;
-    }(StrandClasses.Moveable));
-    StrandClasses.Seagull = Seagull;
-})(StrandClasses || (StrandClasses = {}));
+    }(StrandInter.Moveable));
+    StrandInter.Seagull = Seagull;
+})(StrandInter || (StrandInter = {}));
 //# sourceMappingURL=Seagull.js.map

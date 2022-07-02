@@ -1,5 +1,5 @@
-var StrandClasses;
-(function (StrandClasses) {
+var StrandInter;
+(function (StrandInter) {
     var Moveable = /** @class */ (function () {
         function Moveable(_position, _velocity) {
             this.posX = _position.x;
@@ -10,11 +10,8 @@ var StrandClasses;
         Moveable.prototype.draw = function () {
             console.log("draw");
         };
-        Moveable.prototype.animate = function (_timeslice) {
-            console.log("update");
-        };
         return Moveable;
     }());
-    StrandClasses.Moveable = Moveable;
-})(StrandClasses || (StrandClasses = {}));
+    StrandInter.Moveable = Moveable;
+})(StrandInter || (StrandInter = {}));
 //# sourceMappingURL=Moveable.js.map
